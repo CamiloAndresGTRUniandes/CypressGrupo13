@@ -30,7 +30,7 @@ steps.I_close_my_session();
 steps.waiting(1500);
 }
 );
-xit('Como usuario deseo modificar mi contraseña de perfil', () => {
+it('Como usuario deseo modificar mi contraseña de perfil', () => {
 steps.login();
 steps.I_click_perfil();
 steps.waiting(1000);

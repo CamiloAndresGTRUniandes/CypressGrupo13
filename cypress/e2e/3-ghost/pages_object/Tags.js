@@ -9,6 +9,7 @@ this.txtMetadataTitle="/html/body/div[2]/div/main/section/form/section/div[1]/di
 this.txtMetaDataDescription="/html/body/div[2]/div/main/section/form/section/div[1]/div[2]/div/div/div/div/div[1]/div[2]/textarea";
 this.txtMetaDataURL="/html/body/div[2]/div/main/section/form/section/div[1]/div[2]/div/div/div/div/div[1]/div[3]/input";
 this.btnSaveTag="/html/body/div[2]/div/main/section/form/div[1]/header/section/button";
+
 this.btnDeleteTag='/html/body/div[2]/div/main/section/div/button';
 this.btnConfirmDeleteTag="/html/body/div[5]/div/div/div[2]/button[2]";
 this.selectFirstTag="/html/body/div[2]/div/main/section/section/ol/li[2]/a[4]";

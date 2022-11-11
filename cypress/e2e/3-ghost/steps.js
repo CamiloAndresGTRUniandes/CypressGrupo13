@@ -120,8 +120,8 @@ cy.xpath(tags.txtColor).type(tags.color);
 
 I_enter_description_tag()
 {
-tags.description=faker.lorem.paragraph(); 
-cy.xpath(tags.description).clear();  
+tags.description=faker.lorem.sentence(); 
+cy.xpath(tags.txtDescription).clear();  
 cy.xpath(tags.txtDescription).type(tags.description);                        
 }
 
@@ -165,11 +165,13 @@ I_delete_the_tag()
 {
 cy.xpath(tags.btnDeleteTag).click();                          
 }
-
-
 I_click_confirm_delete_the_tag()
 {
-cy.xpath(tags.btnConfirmDeleteTag).click();                          
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+return false
+});
+cy.xpath(tags.btnConfirmDeleteTag).click({force: true });                          
 }
 
 ///End-Tags
