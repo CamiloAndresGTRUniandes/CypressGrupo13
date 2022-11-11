@@ -41,8 +41,8 @@ cy.get("a[href='#/members/new/']").click();
 }
 I_enter_name_member(){
 memberFrm.setNewName(faker.name.fullName());
-cy.xpath(loginFrm.btnLogin).clear();
-cy.xpath(loginFrm.btnLogin).type(memberFrm.txtName);
+cy.xpath(memberFrm.txtName).clear();
+cy.xpath(memberFrm.txtName).type(memberFrm.name);
 }
 ///member
 I_enter_email_member()
@@ -64,6 +64,9 @@ cy.xpath(memberFrm.btnSave).click();
 }
 
 I_save_member(){
+Cypress.on('uncaught:exception', (err, runnable) => {
+return false
+});
 cy.xpath(memberFrm.btnSave).click();    
 }
 I_selected_first_member()
@@ -95,9 +98,9 @@ cy.xpath(memberFrm.btnDelete).click();
 }
 I_Click_btn_ConfirmDelete()
 {
+Cypress.on('uncaught:exception', (err, runnable) => {return false});
 cy.xpath(memberFrm.btnConfirmDelete).click();
 }
-
 
 ///Tags
 I_click_new_tag()
