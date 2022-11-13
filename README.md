@@ -88,7 +88,8 @@ Criterios de revisión
 ![image](https://user-images.githubusercontent.com/111469024/201499542-fe5745b3-89e8-4f46-878b-2e61649af9c9.png)
 
 8. Seleccionar la prueba a ejecutar:
-![image](https://user-images.githubusercontent.com/111469024/201499574-dc0521ab-13e4-45df-856b-32e92f2b1283.png)
+![image](https://user-images.githubusercontent.com/111469024/201523480-a1941506-15f6-410f-b462-ff4a054bc83f.png)
+
 
 9. En la siguiente imágen podemos ver como se ejecutan las pruebas:
 ![image](https://user-images.githubusercontent.com/111469024/201499590-d4fb4ec9-f09b-4511-b2e3-70abed488220.png)
