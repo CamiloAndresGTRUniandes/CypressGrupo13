@@ -10,6 +10,7 @@ this.aYourProfile='/html/body/div[1]/div/ul/li[4]/a';
 this.iconSettings="/html/body/div[2]/div/main/section/div[1]/header/section/span/button";
 this.btnDelete="/html/body/div[2]/div/main/section/div[1]/header/section/span/ul/li[2]/button";
 this.btnConfirmDelete="/html/body/div[5]/div/div/div[2]/button[2]/span";
+this.btnLeaveDelete = "/html/body/div[5]/div/div/div[2]/button[2]";
 
 this.email=email;
 this.name="";

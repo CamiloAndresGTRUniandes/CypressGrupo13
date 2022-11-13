@@ -1,0 +1,30 @@
+{
+    "pages": {
+        "pagesLink" : "/html/body/div[2]/div/nav[1]/div/section/div[1]/ul[2]/li[2]/a", 
+        "newPage" : "/html/body/div[2]/div/main/section/div/header/section/a",
+        "pageTitle" : "/html/body/div[2]/div/main/div[1]/section/div[1]/div[1]/textarea",
+        "pageBody" : "/html/body/div[2]/div/main/div[1]/section/div[1]/div[1]/article/div[1]/div",
+        "pagePublish" : "/html/body/div[2]/div/main/div[1]/section/header/section/button[2]/span",
+        "continuePublish" : "/html/body/div[4]/div/div/div/div[3]/button",
+        "publishButton" : "/html/body/div[4]/div/div/div/div[2]/button[1]",
+        "backToEditor" : "/html/body/div[4]/div/div/div/p/button",
+        "backToPages" : "/html/body/div[2]/div/main/div[1]/section/header/div/a",
+        "convertToDraft" : "/html/body/div[4]/div/div/div/div[2]/p/button",
+        "backToPosts" : "/html/body/div[2]/div/main/div[1]/section/header/div/a",
+        "scheduledTime": "/html/body/div[4]/div/div/div/div[2]/div[2]/button",
+        "scheduleButton": "/html/body/div[4]/div/div/div/div[2]/div[2]/div/div/div/fieldset/div[1]/div[2]",
+        "selectScheduled" : "/html/body/div[2]/div/main/section/section/div[1]/ol/li[1]/a[1]",
+        "filterDropdown" : "/html/body/div[2]/div/main/section/div/header/section/div/div[1]/div[1]/span",
+        "search":"/html/body/div[2]/div/nav[1]/div/header/div[2]/button",
+        "inputSearch":"/html/body/div[5]/div/div/div/div[1]/div/div/div[1]/input",
+        "scheduledPages" : "/html/body/div[1]/div/ul/li[4]",
+        "unschedule": "/html/body/div[2]/div/main/div[1]/section/header/section/button[2]",
+        "publishedPages" : "/html/body/div[1]/div/ul/li[3]",
+        "unPublishButton": "/html/body/div[2]/div/main/div[1]/section/header/section/button[2]",
+        "selectOption":"/html/body/div[5]/div/div/div/div[1]/div/div/div[2]/div/ul/li/ul/li",
+        "sideMenu":"/html/body/div[2]/div/main/button",
+        "deletePost":"/html/body/div[2]/div/main/div[1]/div/div/div/div[2]/form/button",
+        "deleteConfirmation":"/html/body/div[5]/div/div/div[2]/button[2]"
+        
+    }
+}

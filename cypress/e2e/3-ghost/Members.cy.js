@@ -96,6 +96,8 @@ steps.waiting(2000);
 steps.I_select_button_delete();
 steps.waiting(2000);
 steps.I_Click_btn_ConfirmDelete();
+steps.waiting(2000);
+steps.I_Click_btn_LeaveDelete();
 steps.waiting(1500);
 steps.I_click_perfil();
 steps.waiting(1500);
