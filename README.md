@@ -1,5 +1,5 @@
 # CypressGrupo13
-# Nota: En el siguiente enlace se pueden encontrar los repositorios con las pruebas en Kraken y Cypress: 
+# Nota: En los siguientes enlaces se pueden encontrar los repositorios con las pruebas en Kraken y Cypress: 
 
 [KrakenGrupo13](https://github.com/CamiloAndresGTRUniandes/KrakenGrupo13)
 
