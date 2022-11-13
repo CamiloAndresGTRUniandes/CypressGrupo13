@@ -1,4 +1,11 @@
 # CypressGrupo13
+# Nota: En el siguiente enlace se pueden encontrar los repositorios con las pruebas en Kraken y Cypress: 
+
+[KrakenGrupo13](https://github.com/CamiloAndresGTRUniandes/KrakenGrupo13)
+
+[CypressGrupo13](https://github.com/CamiloAndresGTRUniandes/CypressGrupo13)
+
+
 Criterios de revisión
 
 # 1. Funcionalidades bajo pruebas:
@@ -99,6 +106,4 @@ Criterios de revisión
    a.  [Estrategia 1](https://uniandes-my.sharepoint.com/:b:/g/personal/c_guevarat_uniandes_edu_co/ERT-COBT4vdLpjGATIuMeNkBocFtiasAeRVKXIBpybhXpg?e=GDabaw)
    
    b.  [Estrategia 2](https://uniandes-my.sharepoint.com/:b:/g/personal/c_guevarat_uniandes_edu_co/EVJ5O73YYIlKrXtciCnl80kBH8T3qWeyHSi9EavqQfcLXQ?e=uJ7KUA)
-
-
-
+   
