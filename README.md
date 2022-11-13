@@ -94,5 +94,11 @@ Criterios de revisión
 9. En la siguiente imágen podemos ver como se ejecutan las pruebas:
 ![image](https://user-images.githubusercontent.com/111469024/201523558-2879f479-b391-4df6-bc22-ec0db2e18175.png)
 
+## Las rutas a los documentos con las estrategias de pruebas actualizadas son:
+
+   a.  [Estrategia 1](https://uniandes-my.sharepoint.com/:b:/g/personal/c_guevarat_uniandes_edu_co/ERT-COBT4vdLpjGATIuMeNkBocFtiasAeRVKXIBpybhXpg?e=GDabaw)
+   
+   b.  [Estrategia 2](https://uniandes-my.sharepoint.com/:b:/g/personal/c_guevarat_uniandes_edu_co/EVJ5O73YYIlKrXtciCnl80kBH8T3qWeyHSi9EavqQfcLXQ?e=uJ7KUA)
+
 
 
