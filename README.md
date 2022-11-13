@@ -92,6 +92,7 @@ Criterios de revisión
 
 
 9. En la siguiente imágen podemos ver como se ejecutan las pruebas:
-![image](https://user-images.githubusercontent.com/111469024/201499590-d4fb4ec9-f09b-4511-b2e3-70abed488220.png)
+![image](https://user-images.githubusercontent.com/111469024/201523558-2879f479-b391-4df6-bc22-ec0db2e18175.png)
+
 
 
