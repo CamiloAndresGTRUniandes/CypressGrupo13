@@ -30,7 +30,14 @@ module.exports = defineConfig({
             diffBounds: data.diffBounds,
             analysisTime: data.analysisTime,
           };
+          HTML=HTML.replace("@data.isSameDimensions",data.isSameDimensions );
+          HTML=HTML.replace("@data.dimensionDifference",data.dimensionDifference);
+          HTML=HTML.replace("@data.rawMisMatchPercentage",data.rawMisMatchPercentage);
+          HTML=HTML.replace("@data.misMatchPercentage",data.misMatchPercentage);
+          HTML=HTML.replace("@data.diffBounds",data.diffBound);
+          HTML=HTML.replace("@data.analysisTime",data.analysisTime);
           
+      
          fs.writeFileSync(fileComparative, data.getBuffer());
          fs.writeFileSync(
           DirReport,

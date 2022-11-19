@@ -21,7 +21,7 @@ class CreateReport {
       if (browsers.length === 0) {
         return;
       }
-      let resultInfo = {};
+      let resultInfo = "";
       let datetime = new Date().toISOString().replace(/:/g, ".");
       for (let b of browsers) {
         if (!b in ["chromium", "webkit", "firefox"]) {
@@ -33,6 +33,8 @@ class CreateReport {
         let fileBeforeOrigin = `./cypress/screenshots/${this.folderBefore}/${i}a.png`;
         //let fileAfterDestination = `./cypress/screenshots/Report/${i}a.png`;
         ///let fileBeforeDestination = `./cypress/screenshots/Report/${i}a.png`;
+
+        resultInfo="@ReplaceMyResultInfo";
         let MyfileComparative=`./cypress/screenshots/compare-${i}.png`;
         let reportHTML= this.createReport(datetime, resultInfo, nameModule, i, n, `${this.folderAfter}/${i}a.png`,`${this.folderBefore}/${i}a.png`, `compare-${i}.png`);
         let DirReport= `./cypress/screenshots/report${i}.html`;
@@ -66,7 +68,8 @@ class CreateReport {
    
     <div class="card" >
     <div class="card-header text-white bg-primary mb-3">
-    <h2>Browser: ${b}</h2>  Image 1
+    <h2>Browser: ${b}-Image 1</h2>  
+ 
     </div>
     <div class="card-body">
         <div class="row">
@@ -137,7 +140,7 @@ class CreateReport {
         <div class="dropdown">
           <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://toppng.com//public/uploads/preview/oku-blackdragon-ball-super-freetoedit-goku-black-to-color-11562923499iubjfiashf.png" alt="" width="32" height="32" class="rounded-circle me-2">
-            <strong>Andes Unviversit Group 13 </strong>
+            <strong>Andes Unviversity Group 13 </strong>
           </a>
         <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
             <li><a class="dropdown-item" href="#">Camilo Andres Guevara Triana</a></li>
@@ -149,6 +152,47 @@ class CreateReport {
       </div>
       <div class="b-example-divider b-example-vr"></div>  
       <div class="d-flex flex-column flex-shrink-0"   width=1200" height="1200px"  >
+      <div class="card">
+      <div class="card-header text-white bg-primary mb-3">
+      <h1>Summary </h1><br>
+      
+    </div>
+      <div class="card-body">
+      <table  class="table table-striped table-hover">
+    
+      <thead>
+          <tr>
+            <th>Type</th>
+            <th>Value</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>Same dimensions</td>
+            <td>@data.isSameDimensions</td>
+          </tr>
+            
+          <tr>
+          <td>raw mismatch percentage</td>
+          <td>@data.rawMisMatchPercentage</td>
+        </tr>
+        <tr>
+          <td>raw mismatch percentage</td>
+          <td>@data.misMatchPercentage</td>
+        </tr>
+      
+        <tr>
+          <td>Analysis time</td>
+          <td>@data.analysisTime</td>
+        </tr>
+        
+      </tbody>
+    </table>
+      
+
+      </div>
+ </div>
+     
   
         <div class="card" >
             <div class="card-header text-white bg-primary mb-3">
@@ -185,8 +229,10 @@ class CreateReport {
   
   
             </div>
-       ${config.browsers.map((b) => this.browser(b, resInfo[b], i,fileAfter, fileBefore, MyfileComparative))}
+       ${config.browsers.map((b) => this.browser(b, resInfo, i,fileAfter, fileBefore, MyfileComparative))}
        </div>	
+
+
   
        </main>
   </div>
