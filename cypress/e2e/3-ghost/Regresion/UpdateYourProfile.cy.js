@@ -84,9 +84,13 @@ describe("Ajustes", () => {
     steps.I_close_my_session();
     steps.waiting(1500);
     steps.TakePicture();
+  });
+
+  it("Create report", ()=>{
     let  moduleTest ="Perfil";
-    createReport.executeTest(steps.CountImage-1, "after", "before",moduleTest );
+    createReport.executeTest(7, "after", "before",moduleTest );
     cy.task("createMyReport", "\\cypress\\screenshots\\report1.html").then(p=>{alert(`The reports for ${moduleTest} is in ${p} ` )});
+
   });
 
 });

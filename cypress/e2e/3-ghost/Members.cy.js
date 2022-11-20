@@ -97,6 +97,9 @@ steps.waiting(1500);
 );
 
 it(' Como usuario deseo borrar a  un member', () => {
+steps.setIdScreenImage("a");
+steps.setDirrectoryReport("DeleteMembers")
+
 steps.login();
 steps.waiting(1500);
 ///
