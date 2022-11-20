@@ -257,7 +257,7 @@ class CreateReport {
       links=`${links}
       <li>
       <a href="report${i}.html" class="nav-link text-white">
-        Image ${i}
+        Image Step ${i}
       </a>
     </li>
       `;

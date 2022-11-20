@@ -1,11 +1,21 @@
 {
     "published" : {
         "publishedLink" : "/html/body/div[2]/div/nav[1]/div/section/div[1]/ul[2]/li[1]/div/div/ul/li[3]/a", 
+        "publishedLinkOld" : "/html/body/div[2]/div/nav[1]/section/div[1]/ul[2]/li[2]/div/div/ul/li[3]/a", 
         "selectedPost" : "/html/body/div[2]/div/main/section/section/ol/li[1]/a[1]",
+        "selectedPostOld" : "/html/body/div[2]/div/main/section/section/ol/li[2]/a[2]",
         "editPost" : "/html/body/div[2]/div/main/section/div[1]/header/div/div[2]/a",
         "postTitle" : "/html/body/div[2]/div/main/div[1]/section/div[1]/div[1]/textarea",
+        "postTitleOld" : "/html/body/div[2]/div/main/section/div[1]/div[1]/textarea",
         "postBody" : "/html/body/div[2]/div/main/div[1]/section/div[1]/div[1]/article/div[1]/div",
+        "postBodyOld" : "/html/body/div[2]/div/main/section/div[1]/div[1]/article/div[1]/div",
         "updateButton" : "/html/body/div[2]/div/main/div[1]/section/header/section/button[1]",
-        "backToPost" : "/html/body/div[2]/div/main/div[1]/section/header/div/a"
+        "updateButtonOld" : "/html/body/div[2]/div/main/section/header/section/div/div[1]",
+        "publishButtonOld":"/html/body/div[1]/div/footer/button[2]",
+        "backToPost" : "/html/body/div[2]/div/main/div[1]/section/header/div/a",
+        "backToPostOld" : "/html/body/div[2]/div/main/section/header/div/div[1]/a",
+
+        
+        "closeButtonOld":"/html/body/div[2]/aside/article/button"
     }
 }

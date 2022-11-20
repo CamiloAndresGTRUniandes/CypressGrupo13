@@ -1,19 +1,27 @@
 {
     "posts": {
         "postLink": "/html/body/div[2]/div/nav[1]/div/section/div[1]/ul[2]/li[1]/a[1]",
+        "postLinkOld": "/html/body/div[2]/div/nav[1]/section/div[1]/ul[2]/li[2]/a[1]",
         "newPost": "/html/body/div[2]/div/main/section/div/header/section/a",
+        "newPostOld": "/html/body/div[2]/div/main/section/header/section/a",
         "postTitle": "/html/body/div[2]/div/main/div[1]/section/div[1]/div[1]/textarea",
+        "postTitleOld": "/html/body/div[2]/div/main/section/div[1]/div[1]/textarea",
         "postBody": "/html/body/div[2]/div/main/div[1]/section/div[1]/div[1]/article/div[1]/div",
+        "postBodyOld": "/html/body/div[2]/div/main/section/div[1]/div[1]/article/div[1]/div",
         "postPublish": "/html/body/div[2]/div/main/div[1]/section/header/section/button[2]/span",
+        "postPublishOld": "/html/body/div[2]/div/main/section/header/section/div/div[1]",
         "continuePublish": "/html/body/div[4]/div/div/div/div[3]/button",
         "publishButton": "/html/body/div[4]/div/div/div/div[2]/button[1]",
+        "publishButtonOld": "/html/body/div[1]/div/footer/button[2]",
         "backToEditor": "/html/body/div[4]/div/div/div/p/button",
+        "backToEditorOld": "/html/body/div[2]/div/main/section/header/div/div[1]/a",
         "backToPosts": "/html/body/div[2]/div/main/div[1]/section/header/div/a",
         "scheduledTime": "/html/body/div[4]/div/div/div/div[2]/div[3]/button",
         "scheduleButton": "/html/body/div[4]/div/div/div/div[2]/div[3]/div/div/div/fieldset/div[1]/div[2]",
         "sideMenu":"/html/body/div[2]/div/main/button",
         "deletePost":"/html/body/div[2]/div/main/div[1]/div/div/div/div[2]/form/button",
         "deleteConfirmation":"/html/body/div[5]/div/div/div[2]/button[2]",
-        "goToPost": "/html/body/div[4]/div/div/div/a/div/div/div[2]"
+        "goToPost": "/html/body/div[4]/div/div/div/a/div/div/div[2]",
+        "scheduleItOld":"/html/body/div[1]/div/div/section/div/div[2]/div[2]/div[1]"
     }
 }
