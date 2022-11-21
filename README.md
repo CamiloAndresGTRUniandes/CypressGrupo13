@@ -116,7 +116,9 @@ Versión regresión visual:
 
 ![imagen](https://user-images.githubusercontent.com/111519973/202935728-8014b90d-3f37-4305-9d2f-7edb491360c3.png)
 
+13. Rutas de los issues
 
+https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
 
 ## Las rutas a los documentos con las estrategias de pruebas actualizadas son:
 
