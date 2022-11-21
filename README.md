@@ -125,5 +125,8 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
    a.  [Estrategia 1](https://uniandes-my.sharepoint.com/:b:/g/personal/c_guevarat_uniandes_edu_co/ERT-COBT4vdLpjGATIuMeNkBocFtiasAeRVKXIBpybhXpg?e=GDabaw)
    
    b.  [Estrategia 2](https://uniandes-my.sharepoint.com/:b:/g/personal/c_guevarat_uniandes_edu_co/EVJ5O73YYIlKrXtciCnl80kBH8T3qWeyHSi9EavqQfcLXQ?e=uJ7KUA)
-   
+
+14. Video explicativo semana 6
+
+   [Video explicativo semana 6](https://uniandes-my.sharepoint.com/:v:/g/personal/c_guevarat_uniandes_edu_co/EUY8iXKK0GBFj0aVpHC0fxsBjWf0hsF1gimJHn-Ijmz3hA?e=dAb5RX)
 
