@@ -69,8 +69,12 @@ Criterios de revisión
 
 
 ### Ghost:
+Versión actual:
 
 ![imagen](https://user-images.githubusercontent.com/111519973/201498178-353198c6-ce73-4c19-aa5e-538996d086ce.png)
+Versión regresión visual:
+![imagen](https://user-images.githubusercontent.com/111519973/202934767-9ad2507b-733a-45bc-aa02-b9600b807a3c.png)
+
 
 
 ### Pasos:
@@ -78,7 +82,7 @@ Criterios de revisión
 2. Guardar los datos de acceso a Ghost(email y contraseña) en el archivo \cypress\e2e\3-ghost\pages_object\userData.js, quedando el archivo como se puede observar en la siguiente imágen:
 ![image](https://user-images.githubusercontent.com/111469024/201499357-53fc9973-5766-4709-911a-c4487cdbc0c8.png)
 3. Si desea cambiar la ruta de ghost para la ejecución de los casos de prueba puede hacer en el archivo \cypress\e2e\3-ghost\pages_object\Home.js:
-![image](https://user-images.githubusercontent.com/111469024/201499659-33da6dad-164d-4751-83c2-c4a30fbfa2e6.png)
+![imagen](https://user-images.githubusercontent.com/111519973/202934941-30ad1c86-1d7f-40a7-82a7-111950435aec.png)
 
 4. Para instalar las dependencias necesarias se debe correr el siguiente comando en la ruta raiz 
  ### npm install
@@ -95,11 +99,24 @@ Criterios de revisión
 ![image](https://user-images.githubusercontent.com/111469024/201499542-fe5745b3-89e8-4f46-878b-2e61649af9c9.png)
 
 8. Seleccionar la prueba a ejecutar:
-![image](https://user-images.githubusercontent.com/111469024/201523480-a1941506-15f6-410f-b462-ff4a054bc83f.png)
-
+![imagen](https://user-images.githubusercontent.com/111519973/202935348-1436f802-8a06-4bb5-889d-3ec97c603fb3.png)
 
 9. En la siguiente imágen podemos ver como se ejecutan las pruebas:
 ![image](https://user-images.githubusercontent.com/111469024/201523558-2879f479-b391-4df6-bc22-ec0db2e18175.png)
+
+10. Los escenarios de pruebas de regresion
+![imagen](https://user-images.githubusercontent.com/111519973/202935428-4e33298e-1915-4d8f-b349-ab94deba344a.png)
+
+11. Modal con la ruta de reportes de regresion
+
+
+![imagen](https://user-images.githubusercontent.com/111519973/202935567-8af73f7a-c68b-41c9-bd29-66b9d3add8ca.png)
+
+12. Copia la ruta del reporte y ver el antes y el despues(imagen del reporte)
+
+![imagen](https://user-images.githubusercontent.com/111519973/202935728-8014b90d-3f37-4305-9d2f-7edb491360c3.png)
+
+
 
 ## Las rutas a los documentos con las estrategias de pruebas actualizadas son:
 
@@ -107,3 +124,4 @@ Criterios de revisión
    
    b.  [Estrategia 2](https://uniandes-my.sharepoint.com/:b:/g/personal/c_guevarat_uniandes_edu_co/EVJ5O73YYIlKrXtciCnl80kBH8T3qWeyHSi9EavqQfcLXQ?e=uJ7KUA)
    
+
