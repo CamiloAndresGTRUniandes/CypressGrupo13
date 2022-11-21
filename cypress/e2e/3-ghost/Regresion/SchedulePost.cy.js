@@ -95,7 +95,7 @@ describe('Posts', () => {
     }
     );
     it("Construir reporte", () => {
-        let moduleTest = "Create tag";
+        let moduleTest = "Schedule post";
         createReport.executeTest(9, folderAfter, folderBefore, moduleTest);
         cy.task("createMyReport", "\\cypress\\screenshots\\report1.html").then(
             (p) => {
