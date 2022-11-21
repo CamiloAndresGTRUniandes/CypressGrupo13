@@ -81,6 +81,8 @@ class Pages {
                     return jsonData['pages']['deleteConfirmationOld'];
                 case item.includes('delete confirmation button'):
                     return jsonData['pages']['deleteConfirmation'];
+                case item.includes('delete modal'):
+                    return jsonData['pages']['modalDelete'];
             }
         };
     };
