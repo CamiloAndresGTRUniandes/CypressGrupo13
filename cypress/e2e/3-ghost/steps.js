@@ -8,6 +8,7 @@ const { YourProfile } = require("./pages_object/YourProfile");
 const { ChangeTitleApp } = require("./pages_object/ChangeTitleApp");
 const { Login } = require("./pages_object/login");
 const { ReadFile } = require("./pages_object/readField");
+const { DataTesting } = require("./pages_object/DataTesting");
 
 const memberFrm = new Member(faker.internet.exampleEmail());
 const homeFrm = new Home();
@@ -24,13 +25,13 @@ var inputTitle = "";
 class Steps {
   constructor() {
     this.DirrectoryReport = "";
-    this.CountImage=1;
-    this.IdScreenImage="";
+    this.CountImage = 1;
+    this.IdScreenImage = "";
+    this.dataTesting = new DataTesting();
   }
 
-  setIdScreenImage(IdScreenImage)
-  {
-    this.IdScreenImage= IdScreenImage;
+  setIdScreenImage(IdScreenImage) {
+    this.IdScreenImage = IdScreenImage;
   }
   setDirrectoryReport(url) {
     this.DirrectoryReport = url;
@@ -38,8 +39,11 @@ class Steps {
   setURLGhost(url) {
     homeFrm.URLGhost = url;
   }
-  TakePicture(){
-    cy.screenshot(`${this.DirrectoryReport}/${this.CountImage}${this.IdScreenImage}`, {overwrite: true} );
+  TakePicture() {
+    cy.screenshot(
+      `${this.DirrectoryReport}/${this.CountImage}${this.IdScreenImage}`,
+      { overwrite: true }
+    );
     this.CountImage++;
   }
 
@@ -61,20 +65,21 @@ class Steps {
     cy.get("a[href='#/members/new/']").click();
   }
   I_enter_name_member() {
-    memberFrm.setNewName(faker.name.fullName());
+    memberFrm.setNewName(this.dataTesting.getName());
     cy.xpath(memberFrm.txtName).clear();
     cy.xpath(memberFrm.txtName).type(memberFrm.name);
   }
   ///member
   I_enter_email_member() {
-    this.email = faker.internet.exampleEmail();
+    this.email = this.dataTesting.getEmail();
+    memberFrm.email = this.email;
     cy.xpath(memberFrm.txtEmail).clear();
     cy.xpath(memberFrm.txtEmail).type(memberFrm.email);
   }
 
   I_enter_note_member() {
     cy.xpath(memberFrm.txtMemberNote).clear();
-    cy.xpath(memberFrm.txtMemberNote).type(faker.lorem.paragraph());
+    cy.xpath(memberFrm.txtMemberNote).type(this.dataTesting.getNote());
   }
 
   I_save_new_member() {
@@ -130,14 +135,14 @@ class Steps {
   }
 
   I_enter_name_tag() {
-    tags.setNewNameTag(faker.music.songName());
+    tags.setNewNameTag(this.dataTesting.getTag());
     cy.xpath(tags.txtNameTag).clear();
     cy.xpath(tags.txtNameTag).type(tags.nameTag);
   }
   I_enter_name_tagOld() {
-    tags.setNewNameTag(faker.music.songName());
+    tags.setNewNameTag(this.dataTesting.getTag());
     cy.xpath(tags.txtNameTagOld).clear();
-    cy.xpath(tags.txtNameTagOld).type(tags.nameTag, {force:true});
+    cy.xpath(tags.txtNameTagOld).type(tags.nameTag, { force: true });
   }
 
   I_enter_color_tag() {
@@ -149,19 +154,19 @@ class Steps {
   I_enter_color_tagOld() {
     tags.color = "FF1347";
     cy.xpath(tags.txtColorOld).clear();
-    cy.xpath(tags.txtColorOld).type(tags.color,{force:true});
+    cy.xpath(tags.txtColorOld).type(tags.color, { force: true });
   }
 
   I_enter_description_tag() {
-    tags.description = faker.lorem.sentence();
+    tags.description = this.dataTesting.getDescription();
     cy.xpath(tags.txtDescription).clear();
     cy.xpath(tags.txtDescription).type(tags.description);
   }
 
   I_enter_description_tagOld() {
-    tags.description = faker.lorem.sentence();
+    tags.description = this.dataTesting.getDescription();
     cy.xpath(tags.txtDescriptionOld).clear();
-    cy.xpath(tags.txtDescriptionOld).type(tags.description,{force:true});
+    cy.xpath(tags.txtDescriptionOld).type(tags.description, { force: true });
   }
 
   I_click_btnMetada_tag() {
@@ -173,46 +178,49 @@ class Steps {
   }
 
   I_enter_metadata_title_tag() {
-    tags.metadataTitle = faker.company.name();
+    tags.metadataTitle = this.dataTesting.getTitle();
     cy.xpath(tags.txtMetadataTitle).clear();
     cy.xpath(tags.txtMetadataTitle).type(tags.metadataTitle);
   }
-  
+
   I_enter_metadata_title_tagOld() {
-    tags.metadataTitle = faker.company.name();
+    tags.metadataTitle = this.dataTesting.getTitle();
     cy.xpath(tags.txtMetadataTitleOld).clear();
-    cy.xpath(tags.txtMetadataTitleOld).type(tags.metadataTitle,{force:true});
+    cy.xpath(tags.txtMetadataTitleOld).type(tags.metadataTitle, {
+      force: true,
+    });
   }
 
   I_enter_description_metadata_tag() {
-    tags.metaDataDescription = faker.lorem.sentence();
+    tags.metaDataDescription = this.dataTesting.getDescription();
     cy.xpath(tags.txtMetaDataDescription).clear();
     cy.xpath(tags.txtMetaDataDescription).type(tags.metaDataDescription);
   }
 
   I_enter_description_metadata_tagold() {
-    tags.metaDataDescription = faker.lorem.sentence();
+    tags.metaDataDescription = this.dataTesting.getDescription();
     cy.xpath(tags.txtMetaDataDescriptionOld).clear();
-    cy.xpath(tags.txtMetaDataDescriptionOld).type(tags.metaDataDescription,{force:true});
+    cy.xpath(tags.txtMetaDataDescriptionOld).type(tags.metaDataDescription, {
+      force: true,
+    });
   }
 
   I_enter_url_metadata_tag() {
-    tags.metaDataURL = faker.internet.url();
+    tags.metaDataURL = this.dataTesting.getUrl();
     cy.xpath(tags.txtMetaDataURL).clear();
     cy.xpath(tags.txtMetaDataURL).type(tags.metaDataURL);
   }
 
   I_enter_url_metadata_tagOld() {
-    tags.metaDataURL = faker.internet.url();
+    tags.metaDataURL = this.dataTesting.getUrl();
     cy.xpath(tags.txtMetaDataURLOld).clear();
-    cy.xpath(tags.txtMetaDataURLOld).type(tags.metaDataURL,{force:true});
+    cy.xpath(tags.txtMetaDataURLOld).type(tags.metaDataURL, { force: true });
   }
 
   I_click_btnSaveTag_tag() {
     cy.xpath(tags.btnSaveTag).click();
   }
 
-  
   I_click_btnSaveTag_tagOld() {
     cy.xpath(tags.btnSaveTagOld).click();
   }
@@ -224,7 +232,6 @@ class Steps {
   I_select_the_fist_tagOld() {
     cy.xpath(tags.selectFirstTagOld).click();
   }
-
 
   I_delete_the_tag() {
     cy.xpath(tags.btnDeleteTag).click();
@@ -242,51 +249,76 @@ class Steps {
 
   I_enter_name_profile() {
     cy.xpath(yourProfileFRM.txtNameYourProfile).clear();
-    cy.xpath(yourProfileFRM.txtNameYourProfile).type(faker.name.fullName());
+    cy.xpath(yourProfileFRM.txtNameYourProfile).type(
+      this.dataTesting.getName()
+    );
   }
 
   I_enter_name_profileOld() {
     cy.xpath(yourProfileFRM.txtNameYourProfile).clear();
-    cy.xpath(yourProfileFRM.txtNameYourProfile).type(faker.name.fullName(), {force: true});
+    cy.xpath(yourProfileFRM.txtNameYourProfile).type(
+      this.dataTesting.getName(),
+      { force: true }
+    );
   }
-
 
   I_enter_slug_profile() {
     cy.xpath(yourProfileFRM.txtSlug).clear();
-    cy.xpath(yourProfileFRM.txtSlug).type(faker.music.songName(), {force: true});
+    cy.xpath(yourProfileFRM.txtSlug).type(this.dataTesting.getSlug(), {
+      force: true,
+    });
   }
 
   I_enter_location_profile() {
     cy.xpath(yourProfileFRM.txtLocation).clear();
-    cy.xpath(yourProfileFRM.txtLocation).type(faker.address.cityName(), {force: true});
+    cy.xpath(yourProfileFRM.txtLocation).type(this.dataTesting.getLocation(), {
+      force: true,
+    });
   }
 
   I_enter_web_site_profile() {
     cy.xpath(yourProfileFRM.txtWebSite).clear();
-    cy.xpath(yourProfileFRM.txtWebSite).type(faker.internet.url(), {force: true});
+    cy.xpath(yourProfileFRM.txtWebSite).type(this.DataTesting.getUrl(), {
+      force: true,
+    });
   }
   I_enter_facebook_profile() {
-    let facebook = "https://www.facebook.com/" + faker.name.firstName();
+    let facebook = this.dataTesting.getFacebook();
     cy.xpath(yourProfileFRM.txtFacebook).clear();
-    cy.xpath(yourProfileFRM.txtFacebook).type(facebook, {force: true});
+    cy.xpath(yourProfileFRM.txtFacebook).type(facebook, { force: true });
   }
 
   I_enter_twiter_profile() {
     cy.xpath(yourProfileFRM.txtTwitter).clear();
-    let twitter = "https://www.twitter.com/" + faker.name.firstName();
-    cy.xpath(yourProfileFRM.txtTwitter).type(twitter, {force: true});
+    let twitter = this.dataTesting.getTwiter();
+    cy.xpath(yourProfileFRM.txtTwitter).type(twitter, { force: true });
   }
 
   I_enter_bio_profile() {
     cy.xpath(yourProfileFRM.txtArea).clear();
-    cy.xpath(yourProfileFRM.txtArea).type(faker.lorem.sentence(), {force: true});
+    cy.xpath(yourProfileFRM.txtArea).type(this.dataTesting.getBio(), {
+      force: true,
+    });
+  }
+
+  containNameErrorIsLong()
+  {
+    cy.contains(yourProfileFRM.nameMesaggeErrorIsLong);
+  }
+  containBioErrorIsLong()
+  {
+    cy.contains(yourProfileFRM.bioMesaggeErrorIsLong);
+  }
+
+  containLocationIsLong()
+  {
+    cy.contains(yourProfileFRM.locationErrorIsLong);
   }
 
   I_click_save_your_profile() {
     cy.xpath(yourProfileFRM.btnSaveYourProfile).click();
   }
-  
-  
+
   I_click_save_your_profileOld() {
     cy.xpath(yourProfileFRM.btnSaveYourProfileOld).click();
   }
@@ -360,8 +392,6 @@ class Steps {
     cy.xpath(changeTitleApp.btnGeneral).click();
   }
 
-
-
   I_click_button_expand_title() {
     cy.xpath(changeTitleApp.btnExpand).click();
   }
@@ -372,24 +402,43 @@ class Steps {
 
   I_enter_title_app() {
     cy.xpath(changeTitleApp.txtTitle).clear();
-    cy.xpath(changeTitleApp.txtTitle).type(faker.name.jobTitle());
+    cy.xpath(changeTitleApp.txtTitle).type(this.dataTesting.getTitleApp());
   }
+
+  title_appMsgErr() {
+    cy.contains(changeTitleApp.txtTitleMessageError);
+  }
+
   I_enter_description_app() {
     cy.xpath(changeTitleApp.txtDescription).clear();
-    cy.xpath(changeTitleApp.txtDescription).type(faker.lorem.sentence());
+    cy.xpath(changeTitleApp.txtDescription).type(
+      this.dataTesting.getDescription()
+    );
+  }
+
+  description_appMsgErr() {
+    cy.contains(changeTitleApp.txtDescriptionMessageError);
   }
 
   I_click_button_save_title() {
+    Cypress.on("uncaught:exception", (err, runnable) => {
+      return false;
+    });
     cy.xpath(changeTitleApp.btnSave).click();
   }
 
   I_enter_title_appOld() {
     cy.xpath(changeTitleApp.txtTitleOld).clear();
-    cy.xpath(changeTitleApp.txtTitleOld).type(faker.name.jobTitle(),{force: true});
+    cy.xpath(changeTitleApp.txtTitleOld).type(this.dataTesting.getTitleApp(), {
+      force: true,
+    });
   }
   I_enter_description_appOld() {
     cy.xpath(changeTitleApp.txtDescriptionOld).clear();
-    cy.xpath(changeTitleApp.txtDescriptionOld).type(faker.lorem.sentence(), {force: true});
+    cy.xpath(changeTitleApp.txtDescriptionOld).type(
+      this.dataTesting.getDescription(),
+      { force: true }
+    );
   }
 
   I_click_button_save_titleOld() {
@@ -410,23 +459,20 @@ class Steps {
   }
   I_click_perfilOld() {
     Cypress.on("uncaught:exception", (err, runnable) => {
-        return false;
-      });
-    cy.xpath("/html/body/div[2]/div/nav[1]/section/div[2]/div[1]/div/div[1]").click();
+      return false;
+    });
+    cy.xpath(
+      "/html/body/div[2]/div/nav[1]/section/div[2]/div[1]/div/div[1]"
+    ).click();
   }
-
 
   I_click_your_profile() {
     cy.xpath(homeFrm.aYourProfile).click();
   }
 
-  
   I_click_your_profileOld() {
     cy.xpath(homeFrm.aYourProfileOld).click();
   }
-
-
-
 
   I_close_my_session() {
     cy.xpath("/html/body/div[1]/div/ul/li[9]/a").click();

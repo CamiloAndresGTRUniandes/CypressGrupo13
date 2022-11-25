@@ -11,6 +11,15 @@ constructor() {
   this.txtDescriptionOld="/html/body/div[2]/div/main/section/div/section/div[2]/div[1]/div[1]/div[3]/div/div/div[2]/input";
   this.btnSave    ="/html/body/div[2]/div/main/section/div[1]/header/section/button";
   this.btnSaveOld ="/html/body/div[2]/div/main/section/div/header/section/button";
+
+  this.txtTitleError="/html/body/div[2]/div/main/section/div[2]/div[1]/section/div[1]/div[2]/div/div/div/div[1]/p[1]";
+  this.txtTitleMessageError="Title is too long";
+
+  this.txtDescriptionError="/html/body/div[2]/div/main/section/div[2]/div[1]/section/div[1]/div[2]/div/div/div/div[2]/p[1]";
+  this.txtDescriptionMessageError="Description is too long";
+  
+  
+
  }                       
 
 }

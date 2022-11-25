@@ -16,6 +16,11 @@ this.txtNewPasword= '/html/body/div[2]/div/main/section/section/div/form[2]/div/
 this.txtVerifyPassword="/html/body/div[2]/div/main/section/section/div/form[2]/div/fieldset/div[3]/input";
 this.btnChangePassword="/html/body/div[2]/div/main/section/section/div/form[2]/div/fieldset/div[4]/button"; 
 this.btnCloseToad="/html/body/div[2]/div/aside/article/button";
+
+this.nameMesaggeErrorIsLong="Name is too long";
+this.bioMesaggeErrorIsLong="Bio is too long";
+this.locationErrorIsLong="Location is too long";
+
 }
 
 }
