@@ -21,6 +21,8 @@ const readFile = new ReadFile();
 
 var inputText = "";
 var inputTitle = "";
+var emailCheck = "";
+var passwordCheck = "";
 
 class Steps {
   constructor() {
@@ -47,12 +49,86 @@ class Steps {
     this.CountImage++;
   }
 
-  login() {
+  login(item = "default") {
     cy.visit(homeFrm.URLGhost);
-    cy.get(loginFrm.txtEmail).type(userData.emailAdmin);
-    cy.get(loginFrm.txtPassword).type(userData.passwordAdmin);
+    var emailInput = cy.get(loginFrm.txtEmail);
+    var passInput = cy.get(loginFrm.txtPassword);
+    switch (true) {
+      case item.includes("email"):
+        this.email = this.dataTesting.getEmail();
+        emailCheck = this.email;
+        emailInput.type(this.email);
+        passInput.type(userData.passwordAdmin); 
+        passwordCheck = "";
+        this.tries= "";
+        break;
+      case item.includes("password"):
+        this.passwordInput = this.dataTesting.getDescription()
+        emailInput.clear();
+        emailInput.type(userData.emailAdmin);
+        passInput.type(this.passwordInput);
+        passwordCheck = this.passwordInput;
+        emailCheck = "";
+        emailCheck = "";
+        this.tries= "";
+        break;
+      case item.includes("someAttempts"):
+        this.tries = "someAttempts";
+        for (let index = 0; index < 10; index++) {
+          
+          this.email = this.dataTesting.getEmail();
+          emailCheck = this.email;
+          emailInput.clear();
+          passInput.clear();
+          emailInput.type(this.email);
+          passInput.type(userData.passwordAdmin); 
+          passwordCheck = "";
+          emailCheck = "";
+          cy.xpath(loginFrm.btnLogin).click();
+          this.waiting(500);
+        }
+        break;
+        case item.includes("manyWrong"):
+          this.tries = "manyWrong";
+          for (let index = 0; index < 101; index++) {
+            this.email = this.dataTesting.getEmail();
+            emailCheck = this.email;
+            emailInput.clear();
+            passInput.clear();
+            emailInput.type(this.email);
+            passInput.type(userData.passwordAdmin); 
+            passwordCheck = "";
+            emailCheck = "";
+            cy.xpath(loginFrm.btnLogin).click();
+            this.waiting(500);
+          }
+          break;
+      default:
+        emailInput.clear();
+        passInput.clear();
+        emailInput.type(userData.emailAdmin);
+        passInput.type(userData.passwordAdmin); 
+        emailCheck = "";
+        passwordCheck = "";
+        this.tries= "";
+        break;
+    }
     cy.xpath(loginFrm.btnLogin).click();
     this.waiting(1000);
+  }
+  validateLogin(){
+    if (emailCheck != "") {
+      cy.contains("There is no user with that email address.");
+    }
+    else if (passwordCheck != "") {
+      cy.contains("Your password is incorrect.");
+    }
+    else if (this.tries === "someAttempts"){
+      cy.contains("Too many login attempts.");
+    }
+    else{
+      cy.contains("Only 100 tries per IP address every 3600 seconds.");
+    }
   }
 
   waiting(time) {

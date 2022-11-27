@@ -12,7 +12,6 @@ describe('Posts', () => {
         //LoginStart
         steps.login();
         steps.waiting(1500);
-        
         //LoginEnd
         ///MyMethodStart
         steps.I_click("posts link");
