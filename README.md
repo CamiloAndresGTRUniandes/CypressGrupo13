@@ -168,3 +168,12 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
 |8|Creacion de tag|Al ingresar informacion del tag se espera poder almacenar|Poder crear un nuevo tag|SI|SI|SI|3| 
 |9|Actualizar un tag|Al ingresar informacion del tag se espera poder actualizar el tag deseado|Poder actualizar tag|SI|SI|SI|3| 
 |10|Elimninar un tag|Al ingresar informacion del tag despues espero poder eliminar el tag|Poder actualizar tag|SI|SI|SI|3| 
+|11|Crear nuevo post|Como usuario deseo crear un nuevo post|Crear nuevo post|SI|SI|SI|3| 
+|12|Editar un post|Como usuario deseo editar un post publicado previamente|Editar un post publicado|SI|SI|SI|3| 
+|13|Agendar un post|Como usuario deseo crear un post agendado para ser publicado en el futuro|Agendar un post parta que sea publicado en el futuro|SI|SI|SI|3| 
+|14|Unschedule de un post|Como usuario deseo hacer unpublish de un post agendado|Evitar que un post agendado sea publicado|SI|SI|SI|3|
+|15|Eliminar un post|Como usuario deseo eliminar un post publicado|Eliminar un post que ya haya sido publicado|SI|SI|SI|3|
+|16|Login con email incorrecto|Como usuario deseo hacer login en la aplicación ghost email incorrecto|Validar el mensaje de error al tener un email incorrecto|SI|SI|SI|3|
+|17|Login con password incorrecto|Como usuario deseo hacer login en la aplicación ghost password incorrecto|Validar el mensaje de error al tener un password incorrecto|SI|SI|SI|3|
+|18|Login con varios intentos errados|Como usuario deseo hacer login en la aplicación ghost Varios intentos erroneos (Menos de 100)|Validar el mensaje de error al realizar mas de 6 intentos errados de inicio de sesión (menos de 100 intentos)|SI|SI|SI|3|
+|19|Login con muchos intentos errados|Como usuario deseo hacer login en la aplicación ghost muchos intentos erroneos (Mas de 100)|Validar el mensaje de error al realizar mas de 6 intentos errados de inicio de sesión (Mas de 100 intentos)|SI|SI|SI|3|
