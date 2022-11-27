@@ -132,15 +132,37 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
    
  15. 120 Escenarios Nota para los grupos de 2 60 casos
  
- ## Data  pooling 
+ ## Fuente de mockaroo 
  
- [Url de Api](https://my.api.mockaroo.com/data_ghost.json?key=d6f77020)
+ [URL de Api](https://my.api.mockaroo.com/data_ghost.json?key=d6f77020)
  
-|Escenario ID | Funcionalidad|Descripcion|Resultados esperados|Data-pooling?|Aleatorios?|Pseudo aleatorios |
-| ------ | ------- |---------|---------|---------|---------|---------|
-|1|Titulo de la aplicacion con datos erroneos|Se proceden a tratar almacenar datos con  formato errado|espera que al ingresar datos con formato y  longitud incorrecto no se permita almacenar|SI|SI|SI|
-|2|Titulo de la aplicacion |Como usuario deseo modificar el titulo de la aplicacion|Se espera que se permita actualizar los datos de la aplicacion sin errores|SI|SI|SI|
-|3|Creacion de member|proveniente de la api se espera que se puedan crear un miembro|Se pueda crear un member|
-|4|Actualizacion de member|proveniente de la api se espera que se puedan actualizar un miembro|Se pueda crear y actualizar un member|SI|SI|SI|
+ 
+ ## Resumen de  Escenarios
+ 
+ |Escenarios con datos aleatorios |Escenarios con data pooling|Pseudo aleatorios|
+ |10|10|10|
+ |Total 10|Total 10|Total 10|
+ 
+ |Escenarios con datos errados|Escenarios con normales|
+ |6|24|
+ |Total 6|Total 24|
+ 
+ 
+ ## Detalle por escenario
+ 
+ 
+ 
+ 
+ 
+|Escenario ID | Funcionalidad|Descripcion|Resultados esperados|Data-pooling?|Aleatorios?|Pseudo aleatorios |Total casos|
+| ------ | ------- |---------|---------|---------|---------|---------|--|
+|1|Titulo de la aplicacion con datos erroneos|Se proceden a tratar almacenar datos con  formato errado|espera que al ingresar datos con formato y  longitud incorrecto no se permita almacenar|SI|SI|SI|3|
+|2|Titulo de la aplicacion |Como usuario deseo modificar el titulo de la aplicacion|Se espera que se permita actualizar los datos de la aplicacion sin errores|SI|SI|SI|3|
+|3|Creacion de member|Se espera que se puedan crear un miembro|Se pueda crear un member|SI|SI|SI|3|
+|4|Actualizacion de member|Se espera que se puedan actualizar un miembro|Se pueda crear y actualizar un member|SI|SI|SI|3|
+|5|Eliminacion de member|Se espera que se puedan eliminar un miembro|Se pueda crear y eliminar un member|SI|SI|SI|3|
+|6| Modificar mi datos de perfil|Se desea modificar los datos de perfil con el usuario por defecto que se encuentra en el sistema|Se permita guardar los datos de mi perfil|SI|SI|SI|3|
+|6| Tratar de modificar mi datos de perfil con datos con formato incorrecto |Se desea modificar los datos de perfil con el usuario pero indicando datos incorrectos|No se debe almacenar los datos, se debe validar los datos de validacion |SI|SI|SI|3|
+
 
 
