@@ -164,7 +164,7 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
 |4|Actualizacion de member|Se espera que se puedan actualizar un miembro|Se pueda crear y actualizar un member|SI|SI|SI|3|
 |5|Eliminacion de member|Se espera que se puedan eliminar un miembro|Se pueda crear y eliminar un member|SI|SI|SI|3|
 |6| Modificar mi datos de perfil|Se desea modificar los datos de perfil con el usuario por defecto que se encuentra en el sistema|Se permita guardar los datos de mi perfil|SI|SI|SI|3|
-|6| Tratar de modificar mi datos de perfil con datos con formato incorrecto |Se desea modificar los datos de perfil con el usuario pero indicando datos incorrectos|No se debe almacenar los datos, se debe validar los datos de validacion |SI|SI|SI|3|
-
-
-
+|7| Tratar de modificar mi datos de perfil con datos con formato incorrecto |Se desea modificar los datos de perfil con el usuario pero indicando datos incorrectos|No se debe almacenar los datos, se debe validar los datos de validacion |SI|SI|SI|3|
+|8|Creacion de tag|Al ingresar informacion del tag se espera poder almacenar|Poder crear un nuevo tag|SI|SI|SI|3| 
+|9|Actualizar un tag|Al ingresar informacion del tag se espera poder actualizar el tag deseado|Poder actualizar tag|SI|SI|SI|3| 
+|10|Elimninar un tag|Al ingresar informacion del tag despues espero poder eliminar el tag|Poder actualizar tag|SI|SI|SI|3| 
