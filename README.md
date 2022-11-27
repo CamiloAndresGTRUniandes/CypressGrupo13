@@ -139,15 +139,15 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
  
  ## Resumen de  Escenarios
  
- |Escenarios con datos aleatorios |Escenarios con data pooling|Pseudo aleatorios|
- |--|--|--|
- |10|10|10|
- |Total 10|Total 10|Total 10|
+ |Escenarios con datos aleatorios |Escenarios con data pooling|Pseudo aleatorios|Gran Total|
+ |--|--|--|--|
+ |10|10|10|30|
+ |Total 10|Total 10|Total 10| 30|
  
- |Escenarios con datos errados|Escenarios con normales|
- |--|--|
- |6|24|
- |Total 6|Total 24|
+ |Escenarios con datos errados|Escenarios con normales|Gran Total|
+ |--|--|--|
+ |6|24|30|
+ |Total 6|Total 24|30|
  
  
  ## Detalle por escenario
