@@ -83,7 +83,7 @@ class DataTesting {
       this.modelData.bioWrong = data.body[0].bioWrong;
       this.modelData.titleAppWrong = data.body[0].titleAppWrong;
       this.modelData.postTitleWrong = data.body[0].postTitleWrong;
-      this.modelData.postBodyWrong = data.body[0].postBody;
+      this.modelData.postBodyWrong = data.body[0].postBodyWrong;
       console.log("my model from mockaro", this.modelData);
     });
   }
@@ -204,6 +204,43 @@ class DataTesting {
         return this.modelData.titleAppWrong;
     }
   }
+  getPostTitle() {
+    switch (this.typeData) {
+      case "aleatorio":
+        return faker.company.name();
+      case "pseudo-aletaorio":
+        faker.seed(this.seed);
+        return faker.company.name();
+      case "data-pooling":
+        return this.modelData.postTitle;
+      case "aleatorio-wrong":
+        return faker.lorem.paragraphs();
+      case "pseudo-aletaorio-wrong":
+        faker.seed(this.seed);
+        return faker.lorem.paragraphs();
+      case "data-pooling-wrong":
+        return this.modelData.titleAppWrong;
+    }
+  }
+  getBody() {
+    switch (this.typeData) {
+      case "aleatorio":
+        return faker.lorem.sentence()
+      case "pseudo-aletaorio":
+        faker.seed(this.seed);
+        return faker.lorem.sentence()
+      case "data-pooling":
+        return this.modelData.postBody;
+      case "aleatorio-wrong":
+        return faker.lorem.paragraphs();
+      case "pseudo-aletaorio-wrong":
+        faker.seed(this.seed);
+        return faker.lorem.paragraphs();
+      case "data-pooling-wrong":
+        return this.modelData.bodyAppWrong;
+    }
+  }
+  
   getUrl() {
     switch (this.typeData) {
       case "aleatorio":

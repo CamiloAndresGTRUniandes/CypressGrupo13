@@ -492,9 +492,22 @@ class Steps {
     cy.xpath(elementPath).click({ force: true });
   }
   I_enter_text_in(item) {
-    inputText = faker.lorem.sentence();
+    item = item.toLowerCase();
+    switch (true) {
+      case item.includes("title"):
+        inputText = this.dataTesting.getPostTitle();
+        inputTitle = inputText;
+        console.log("Titulo => ", inputText);
+        break;
+       case item.includes("body"):
+        inputText = this.dataTesting.getBody();
+        console.log("Body => ", inputText);
+        break;
+      default:
+        inputText = faker.lorem.sentence();
+        break;
+    }
     let elementPath = readFile.getElement(item);
-    if (item.includes("title")) inputTitle = inputText;
     cy.xpath(elementPath).clear();
     cy.xpath(elementPath).type(inputText);
   }
