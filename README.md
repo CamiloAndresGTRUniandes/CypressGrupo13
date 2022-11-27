@@ -129,4 +129,18 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
 14. Video explicativo semana 6
 
    [Video explicativo semana 6](https://uniandes-my.sharepoint.com/:v:/g/personal/c_guevarat_uniandes_edu_co/EUY8iXKK0GBFj0aVpHC0fxsBjWf0hsF1gimJHn-Ijmz3hA?e=dAb5RX)
+   
+ 15. 120 Escenarios Nota para los grupos de 2 60 casos
+ 
+ ## Data  pooling 
+ 
+ [Url de Api](https://my.api.mockaroo.com/data_ghost.json?key=d6f77020)
+ 
+|Escenario ID | Funcionalidad|Descripcion|Resultados esperados|Data-pooling?|Aleatorios?|Pseudo aleatorios |
+| ------ | ------- |---------|---------|---------|---------|---------|
+|1|Titulo de la aplicacion con datos erroneos|Se proceden a tratar almacenar datos con  formato errado|espera que al ingresar datos con formato y  longitud incorrecto no se permita almacenar|SI|SI|SI|
+|2|Titulo de la aplicacion |Como usuario deseo modificar el titulo de la aplicacion|Se espera que se permita actualizar los datos de la aplicacion sin errores|SI|SI|SI|
+|3|Creacion de member|proveniente de la api se espera que se puedan crear un miembro|Se pueda crear un member|
+|4|Actualizacion de member|proveniente de la api se espera que se puedan actualizar un miembro|Se pueda crear y actualizar un member|SI|SI|SI|
+
 
