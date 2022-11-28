@@ -149,7 +149,7 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
  
  |Escenarios con datos errados|Escenarios con normales|Gran Total|
  |--|--|--|
- |21|54|72|
+ |21|54|75|
  |Total 21|Total 54|75|
  
  
