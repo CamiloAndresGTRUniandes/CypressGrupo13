@@ -219,7 +219,7 @@ class DataTesting {
         faker.seed(this.seed);
         return faker.lorem.paragraphs();
       case "data-pooling-wrong":
-        return this.modelData.titleAppWrong;
+        return this.modelData.postTitleWrong;
     }
   }
   
