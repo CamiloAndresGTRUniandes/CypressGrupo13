@@ -182,3 +182,5 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
 |22|Unschedule de una pagina|Como usuario deseo hacer unschedule de una pagina agendada|Evitar que una pagina agendada sea publicada|SI|SI|SI|3|
 |23|Unpublish de una pagina|Como usuario deseo hacer unpublish de una pagina publicada|Convertir nuevamente en borrador una pagina ya publicada|SI|SI|SI|3|
 |24|Eliminar una pagina|Como usuario deseo eliminar una pagina|Eliminar una pagina ya publicada|SI|SI|SI|3|
+|Gran Total|||||||72|
+
