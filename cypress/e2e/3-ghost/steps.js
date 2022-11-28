@@ -585,6 +585,7 @@ class Steps {
     }
     let elementPath = readFile.getElement(item);
     cy.xpath(elementPath).clear();
+    console.log("################ inputText =>",inputText);
     cy.xpath(elementPath).type(inputText);
   }
   //Click Generic Method end

@@ -222,6 +222,7 @@ class DataTesting {
         return this.modelData.titleAppWrong;
     }
   }
+  
   getBody() {
     switch (this.typeData) {
       case "aleatorio":
@@ -237,7 +238,7 @@ class DataTesting {
         faker.seed(this.seed);
         return faker.lorem.paragraphs();
       case "data-pooling-wrong":
-        return this.modelData.bodyAppWrong;
+        return this.modelData.postBodyWrong;
     }
   }
   
