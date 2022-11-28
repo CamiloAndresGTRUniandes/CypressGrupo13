@@ -177,3 +177,8 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
 |17|Login con password incorrecto|Como usuario deseo hacer login en la aplicación ghost password incorrecto|Validar el mensaje de error al tener un password incorrecto|SI|SI|SI|3|
 |18|Login con varios intentos errados|Como usuario deseo hacer login en la aplicación ghost Varios intentos erroneos (Menos de 100)|Validar el mensaje de error al realizar mas de 6 intentos errados de inicio de sesión (menos de 100 intentos)|SI|SI|SI|3|
 |19|Login con muchos intentos errados|Como usuario deseo hacer login en la aplicación ghost muchos intentos erroneos (Mas de 100)|Validar el mensaje de error al realizar mas de 6 intentos errados de inicio de sesión (Mas de 100 intentos)|SI|SI|SI|3|
+|20|Crear nueva pagina|Como usuario deseo crear una nueva pagina|Crear nueva pagina|SI|SI|SI|3| 
+|21|Agendar una pagina|Como usuario deseo agendar la creación de una nueva pagina|Agendar una pagina parta que sea publicada en el futuro|SI|SI|SI|3| 
+|22|Unschedule de una pagina|Como usuario deseo hacer unschedule de una pagina agendada|Evitar que una pagina agendada sea publicada|SI|SI|SI|3|
+|23|Unpublish de una pagina|Como usuario deseo hacer unpublish de una pagina publicada|Convertir nuevamente en borrador una pagina ya publicada|SI|SI|SI|3|
+|24|Eliminar una pagina|Como usuario deseo eliminar una pagina|Eliminar una pagina ya publicada|SI|SI|SI|3|
