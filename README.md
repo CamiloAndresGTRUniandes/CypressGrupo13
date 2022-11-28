@@ -138,6 +138,9 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
  
  
  ## Resumen de  Escenarios
+ Los escenarios para la semana 7 podrán ser encontrados en las carpetas ("DataPoolGenerico","DatosAleatorios","pseudoAleatorio") como se puede ver en la siguiente imágen:
+ ![WhatsApp Image 2022-11-27 at 20 30 56](https://user-images.githubusercontent.com/111469024/204173110-b7424092-6de5-4c92-99ef-da4c365af478.jpg)
+
  
  |Escenarios con datos aleatorios |Escenarios con data pooling|Pseudo aleatorios|Gran Total|
  |--|--|--|--|
