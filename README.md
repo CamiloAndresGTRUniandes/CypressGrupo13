@@ -144,13 +144,13 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
  
  |Escenarios con datos aleatorios |Escenarios con data pooling|Pseudo aleatorios|Gran Total|
  |--|--|--|--|
- |24|24|24|72|
- |Total 24|Total 24|Total 24| 72|
+ |25|25|25|75|
+ |Total 25|Total 25|Total 25| 75|
  
  |Escenarios con datos errados|Escenarios con normales|Gran Total|
  |--|--|--|
- |18|54|72|
- |Total 18|Total 54|72|
+ |21|54|72|
+ |Total 21|Total 54|75|
  
  
  ## Detalle por escenario
@@ -185,5 +185,6 @@ https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31/issues
 |22|Unschedule de una pagina|Como usuario deseo hacer unschedule de una pagina agendada|Evitar que una pagina agendada sea publicada|SI|SI|SI|3|
 |23|Unpublish de una pagina|Como usuario deseo hacer unpublish de una pagina publicada|Convertir nuevamente en borrador una pagina ya publicada|SI|SI|SI|3|
 |24|Eliminar una pagina|Como usuario deseo eliminar una pagina|Eliminar una pagina ya publicada|SI|SI|SI|3|
-|Gran Total|||||||72|
+|25|Titulo de gran longitud en posts title|Como usuario deseo crear un nuevo post pero al tener un titulo de gran longitud espero ver un error|Validar longitud de post title|SI|SI|SI|3|
+|Gran Total|||||||75|
 
