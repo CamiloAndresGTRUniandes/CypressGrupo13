@@ -1,9 +1,22 @@
-# CypressGrupo13
-# Nota: En los siguientes enlaces se pueden encontrar los repositorios con las pruebas en Kraken y Cypress: 
+# Grupo13
+# Estrategia final
+[Estrategia presupuesto final](https://uniandes-my.sharepoint.com/:b:/g/personal/c_guevarat_uniandes_edu_co/EYm2qbzrRQZOnDK19Myn7R8Bs0XF3DxTflj_hmo_h5oyOw?e=Yn7rwU)
+
+# Video presentación final
+
+[Video Presentación](https://uniandes-my.sharepoint.com/:v:/g/personal/c_guevarat_uniandes_edu_co/EbWIb4dhPstBquqe1OIx8BEBLW8633kx5lZCsc0dnhV_Aw?e=ecK4OD)
+
+# Nota: En los siguientes enlaces se pueden encontrar los repositorios con las pruebas en Rippupet, monkey-cypress, Kraken y Cypress: 
+
+[Repositorio Monkey-cyprees e issues](https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO31)
+
+[Ripuppet](https://github.com/nathanbelt23UniAndes/MISOTESTGRUPO13Ripuppet)
 
 [KrakenGrupo13](https://github.com/CamiloAndresGTRUniandes/KrakenGrupo13)
 
 [CypressGrupo13](https://github.com/CamiloAndresGTRUniandes/CypressGrupo13)
+
+
 
 
 Criterios de revisión
